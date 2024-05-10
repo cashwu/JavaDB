@@ -1,0 +1,37 @@
+
+@host=http://localhost:8080
+
+###
+
+POST {{host}}/purchase
+Content-Type: application/json
+
+{
+   "product": "aaa",
+  "price": 123
+}
+
+###
+
+GET {{host}}/purchase
+
+
+###
+
+GET {{host}}/accounts
+
+###
+
+GET {{host}}/accounts?name=ccc
+
+
+###
+
+POST {{host}}/transfer
+Content-Type: application/json
+
+{
+  "senderId": 1,
+  "receiverId": 2,
+  "amount": 9
+}
